@@ -1,0 +1,49 @@
+Wczytywanie...
+Zakończono wczytywanie
+Wczytano zestawow: 9
+
+Zakonczono przetwarzanie zestawu: 1
+Dlugosc uszeregowania: 283
+Czas pracy algorytmu: 0.00895 [ms]
+Permutacja: 1 3 4 2
+
+Zakonczono przetwarzanie zestawu: 2
+Dlugosc uszeregowania: 3109
+Czas pracy algorytmu: 0.078932 [ms]
+Permutacja: 1 45 30 28 18 25 10 21 6 48 5 13 31 7 2 4 49 11 19 33 46 32 47 23 34 50 42 14 22 29 43 8 9 36 40 37 17 38 20 39 16 24 3 35 12 41 27 44 15 26
+
+Zakonczono przetwarzanie zestawu: 3
+Dlugosc uszeregowania: 3708
+Czas pracy algorytmu: 0.11728 [ms]
+Permutacja: 38 1 28 6 22 10 20 35 37 11 21 49 3 29 46 17 43 18 19 13 25 5 47 27 7 32 34 14 26 16 40 44 41 33 9 8 50 45 24 39 2 42 31 12 30 23 48 4 15 36
+
+Zakonczono przetwarzanie zestawu: 4
+Dlugosc uszeregowania: 3353
+Czas pracy algorytmu: 0.038179 [ms]
+Permutacja: 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 1 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50
+
+Zakonczono przetwarzanie zestawu: 5
+Dlugosc uszeregowania: 3235
+Czas pracy algorytmu: 0.064905 [ms]
+Permutacja: 1 34 39 15 32 41 26 5 46 37 33 17 24 27 21 20 42 43 48 13 29 36 4 6 16 50 10 25 18 2 38 19 9 40 44 28 11 49 3 7 30 8 47 31 35 12 45 23 22 14
+
+Zakonczono przetwarzanie zestawu: 6
+Dlugosc uszeregowania: 3625
+Czas pracy algorytmu: 0.064034 [ms]
+Permutacja: 1 44 25 35 28 4 30 45 43 46 10 9 2 40 16 17 3 20 8 27 38 14 6 36 7 21 48 5 37 24 26 47 50 41 23 12 22 13 39 34 18 11 49 15 19 42 32 33 31 29
+
+Zakonczono przetwarzanie zestawu: 7
+Dlugosc uszeregowania: 3446
+Czas pracy algorytmu: 0.065518 [ms]
+Permutacja: 19 36 46 4 38 39 5 6 26 3 29 8 40 15 11 9 12 13 49 2 44 28 42 47 10 30 50 23 43 27 35 17 14 37 18 16 45 41 31 32 21 7 24 33 22 25 20 1 34 48
+
+Zakonczono przetwarzanie zestawu: 8
+Dlugosc uszeregowania: 3862
+Czas pracy algorytmu: 0.067767 [ms]
+Permutacja: 48 1 41 40 28 46 44 23 34 29 10 38 49 36 15 50 16 21 2 19 35 9 8 42 25 37 7 45 12 20 18 32 26 43 13 6 5 4 31 17 22 24 14 27 39 30 47 3 33 11
+
+Zakonczono przetwarzanie zestawu: 9
+Dlugosc uszeregowania: 3645
+Czas pracy algorytmu: 0.063487 [ms]
+Permutacja: 30 49 5 29 37 14 22 8 16 4 11 25 15 19 23 18 35 39 2 28 3 26 47 27 24 42 20 12 10 41 45 34 32 33 50 46 43 9 44 1 13 48 7 36 38 6 21 40 17 31
+
