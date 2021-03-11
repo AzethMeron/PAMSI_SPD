@@ -1,0 +1,10 @@
+Jakub Grzana
+Alicja Gerlach
+
+Termin oddania 17 kwietnia 2020. Brak spóźnienia
+Sterowanie procesami ciągłymi, laboratorium nr. 3
+
+Całość kodu dotycząca algorytmu znajduje się w pliku spd.hpp
+Tester to autorski szablon ułatwiający pisanie projektów.
+
+Wykonaliśmy NEH bez akceleracji. Wyniki są zgodne z tymi prezentowanymi na stronie, włącznie z kolejnością w permutacji.
