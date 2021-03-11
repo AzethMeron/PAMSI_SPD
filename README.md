@@ -1,3 +1,9 @@
 # SPD
 
-Polish programs used for PAMSI and SPD PWr courses, most important thing here is tester-przykład directory, with Tester template in it. It is well documented (in polish tho) and can be used to test performance of algorithms.
+Polish programs used for PAMSI and SPD PWr courses. Includes:\
+- proper implementation of Dijkstra algorithm for graph represented using matrix and list\
+- unfinished implementation of Bellman algorithm for same purpse (no check for negative cyckles)\
+- implementation of NEH algorithm\
+- implementation of Schrage algorithm\
+- implementation of Carlier algorithm\
+- Well-documented tester for SPD, and not-so-well maintained tester for PAMSI.\ 
