@@ -1,0 +1,12 @@
+
+Oczekiwana ocena: 5.0
+
+Zaimplementowaliśmy Schrage bez podziału oraz Schrage z podziałem zadań, w wersjach z kopcem oraz bez kopca.
+Kopiec implementowaliśmy sami, kod można znaleźć w pliku 'kopiec.hpp'. Większość kodu dotycząca ćwiczenia znajduje się w pliku 'spd.hpp'
+
+W folderze "alternatywna implementacja kopca" znajduje się kopiec pozbawiony rekurencji, realizujący, jakby to ująć, iteracje po Stosie.
+Teoretycznie powinien być znacznie szybszy, w praktyce nie zaobserwowaliśmy różnic.
+
+Implementacje na kopcu oraz bez kopca dają dokładnie takie same wyniki. Implementacja na kopcu jest prostsza do napisania, jednak w naszym przypadku spowolniła działanie programu.
+Nie wiemy czy to wina naszej implementacji kopca, teoretycznie kopiec powinien bardzo przyśpieszyć wyszukiwanie ponieważ nie musimy przeszukiwać całej tablicy, ma natomiast tę wadę że wymusza
+zamienianie miejscami obiektów co jest bardzo kosztowną operacją. Po zwiększeniu liczby elementów do 200, implementacja na kopcu jeszcze bardziej została w tyle.
