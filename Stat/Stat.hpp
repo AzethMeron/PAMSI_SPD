@@ -41,6 +41,7 @@ class DataSeries
 	protected:
 		std::vector<TYPE> dataseries;
 		TYPE sum;
+		TYPE variance;
 	public:
 		// tools
 		void Add(const TYPE& time);			// O(1)
@@ -49,6 +50,7 @@ class DataSeries
 		TYPE StandardDeviation(void) const;	// O(n)
 		TYPE Median(void) const; 			// O(nlogn)
 		DataSeries<TYPE> Sorted(void) const;// O(nlogn)
+		DataSeries<TYPE> Reversed(void) const; // O(n)
 		// getters 
 		int Size(void) const;
 		TYPE operator[] (const int& ind) const;
@@ -118,6 +120,14 @@ DataSeries<TYPE> DataSeries<TYPE>::Sorted(void) const
 	DataSeries<TYPE> sorted = *this;
 	sort(sorted.dataseries.begin(), sorted.dataseries.end());
 	return sorted;
+}
+
+template<typename TYPE>
+DataSeries<TYPE> DataSeries<TYPE>::Reversed(void) const
+{
+	DataSeries<TYPE> reversed = *this;
+	std::reverse(reversed.dataseries.begin(), reversed.dataseries.end());
+	return reversed;
 }
 
 template<typename TYPE>
