@@ -41,7 +41,6 @@ class DataSeries
 	protected:
 		std::vector<TYPE> dataseries;
 		TYPE sum;
-		TYPE variance;
 	public:
 		// tools
 		void Add(const TYPE& time);			// O(1)
