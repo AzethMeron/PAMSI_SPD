@@ -1,9 +1,13 @@
 #ifndef STAT_HPP
 #define STAT_HPP
 
+#include <iostream>
 #include <chrono>
 #include <vector>
 #include <cmath>
+#include <algorithm>
+
+//////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////////////////
 
@@ -53,8 +57,12 @@ class DataSeries
 		// getters 
 		int Size(void) const;
 		TYPE operator[] (const int& ind) const;
+		std::vector<TYPE> Data(void) const;
 		// Constructors
 		DataSeries();
+		// Conversion
+		DataSeries(const std::vector<TYPE>& in);
+		DataSeries<TYPE>& operator = (const std::vector<TYPE>& in);
 };
 
 typedef DataSeries<double> TimeSeries;
@@ -155,6 +163,30 @@ template<typename TYPE>
 DataSeries<TYPE>::DataSeries() : dataseries()
 {
 	this->sum = 0;
+}
+
+template<typename TYPE>
+std::vector<TYPE> DataSeries<TYPE>::Data(void) const
+{
+	return this->dataseries;
+}
+
+template<typename TYPE>
+DataSeries<TYPE>::DataSeries(const std::vector<TYPE>& in)
+{
+	*this = in;
+}
+
+template<typename TYPE>
+DataSeries<TYPE>& DataSeries<TYPE>::operator = (const std::vector<TYPE>& in)
+{
+	this->sum = 0;
+	this->dataseries = in;
+	for(unsigned int i = 0; i < in.size(); ++i)
+	{
+		this->sum = this->sum + in[i];
+	}
+	return *this;
 }
 
 //////////////////////////////////////////////////////////////////////////
