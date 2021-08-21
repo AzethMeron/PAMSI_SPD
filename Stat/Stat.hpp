@@ -63,6 +63,8 @@ class DataSeries
 		// Conversion
 		DataSeries(const std::vector<TYPE>& in);
 		DataSeries<TYPE>& operator = (const std::vector<TYPE>& in);
+		// Others
+		DataSeries<TYPE> operator + (const DataSeries<TYPE>& r);
 };
 
 typedef DataSeries<double> TimeSeries;
@@ -187,6 +189,17 @@ DataSeries<TYPE>& DataSeries<TYPE>::operator = (const std::vector<TYPE>& in)
 		this->sum = this->sum + in[i];
 	}
 	return *this;
+}
+
+template<typename TYPE>
+DataSeries<TYPE> DataSeries<TYPE>::operator + (const DataSeries<TYPE>& r)
+{
+	DataSeries<TYPE> out = *this;
+	for(int i = 0; i < r.Size(); ++i)
+	{
+		out.Add(r[i]);
+	}
+	return out;
 }
 
 //////////////////////////////////////////////////////////////////////////
