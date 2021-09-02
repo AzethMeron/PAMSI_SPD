@@ -54,6 +54,9 @@ class DataSeries
 		TYPE Median(void) const; 			// O(nlogn)
 		DataSeries<TYPE> Sorted(void) const;// O(nlogn)
 		DataSeries<TYPE> Reversed(void) const; // O(n)
+		TYPE Min(void) const; 				// O(n)
+		TYPE Max(void) const;				// O(n)
+		double RelativeDeviation(void) const; 	// O(n), return value 0..1
 		// getters 
 		int Size(void) const;
 		TYPE operator[] (const int& ind) const;
@@ -137,6 +140,43 @@ DataSeries<TYPE> DataSeries<TYPE>::Reversed(void) const
 	DataSeries<TYPE> reversed = *this;
 	std::reverse(reversed.dataseries.begin(), reversed.dataseries.end());
 	return reversed;
+}
+
+template<typename TYPE>
+TYPE DataSeries<TYPE>::Min(void) const
+{
+	if(this->Size() == 0) throw -1;
+	int ind = 0;
+	for(int i = 1; i < this->Size(); ++i)
+	{
+		if( (*this)[i] < (*this)[ind] )
+		{
+			ind = i;
+		}
+	}
+	return (*this)[ind];
+}
+
+template<typename TYPE>
+TYPE DataSeries<TYPE>::Max(void) const
+{
+	if(this->Size() == 0) throw -1;
+	int ind = 0;
+	for(int i = 1; i < this->Size(); ++i)
+	{
+		if( (*this)[ind] < (*this)[i] )
+		{
+			ind = i;
+		}
+	}
+	return (*this)[ind];
+}
+
+template<typename TYPE>
+double DataSeries<TYPE>::RelativeDeviation(void) const
+{
+	TYPE dev = this->StandardDeviation();
+	return dev / this->Average();
 }
 
 template<typename TYPE>
