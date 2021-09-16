@@ -7,3 +7,7 @@ Polish programs used for PAMSI and SPD PWr courses. Includes:
 - implementation of Schrage algorithm
 - implementation of Carlier algorithm
 - Well-documented tester for SPD, and not-so-well maintained tester for PAMSI.
+
+---
+Licensed under CC BY
+i would like to see anyone ever finding this ngl XD
