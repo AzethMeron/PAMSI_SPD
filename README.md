@@ -10,7 +10,7 @@ Polish programs used for PAMSI and SPD PWr courses. Includes:
 
 ---
 
-Copyright (c) 2021 Jakub Grzana (https://github.com/AzethMeron?tab=repositories) 
+Copyright (c) 2021 Jakub Grzana (https://github.com/AzethMeron) 
 
 All rights reserved.
 
